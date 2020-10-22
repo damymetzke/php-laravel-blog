@@ -18,14 +18,14 @@ composer install
 npm i
 
 # Run to start local server
-# make sure you have and SQL server running and inserted the correct credentials in .env:
+# make sure you have an SQL server running and inserted the correct credentials in .env:
 php artisan serve
 ```
 
 ## Design
 This simple blog uses an API first strategy.
-All content is available through a reast api.
-The rest api resides under `/api`.
+All content is available through a REST api.
+The REST API resides under `/api`.
 The content is returned in JSON.
 The actual web site is a way to view the data.
-However, does not provide any extra content that the api besides `HTML`, `CSS`, and `JS`.
+However, does not provide any extra content that the API besides `HTML`, `CSS`, and `JS`.
