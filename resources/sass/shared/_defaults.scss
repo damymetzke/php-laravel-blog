@@ -1,0 +1,32 @@
+@use 'sass:color';
+@import 'colors';
+
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body
+{
+    background-color: $color-background;
+    color: $color-text;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    color: $color-header;
+}
+
+h1
+{
+    font-size: 4rem;
+    text-align: center;
+
+    border-bottom: color.scale($color: $color-header, $alpha: -50%) dashed 3px;
+}
