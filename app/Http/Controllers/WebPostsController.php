@@ -32,7 +32,7 @@ class WebPostsController extends PostsController
         $postData = $this->getPostFromSlugOrId($slugOrId);
 
         return view(
-            'post',
+            'edit-post',
             [
                 'title' => $postData->title,
                 'body' => $postData->body
