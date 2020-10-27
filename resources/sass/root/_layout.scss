@@ -1,0 +1,50 @@
+#root-layout
+{
+    display: grid;
+
+    grid-template-columns: 1fr 300px;
+}
+
+#posts
+{
+    h2
+    {
+        text-align: center;
+    }
+
+    ol
+    {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+        a
+        {
+            height: 100%;
+            width: 100%;
+            display: block;
+
+            padding: 10px;
+
+            &:link
+            {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            border: $color-highlight solid 2px;
+            background-color: $color-inverted-background;
+
+            h3
+            {
+                text-align: center;
+                color: $color-inverted-header;
+            }
+
+            p
+            {
+                color: $color-inverted-text;
+            }
+        }
+    }
+}

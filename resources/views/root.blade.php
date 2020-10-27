@@ -2,34 +2,30 @@
 
 @section('content')
     <h1>PHP Laravel Blog</h1>
-    <div id="summary">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id placeat laudantium itaque saepe, dolorem nisi unde consequatur accusantium ratione amet, delectus officia odio aspernatur recusandae eum! Ex adipisci fugiat dolor blanditiis inventore rem nam nisi accusantium quos earum. Et similique nihil assumenda neque? Maxime repellendus possimus sapiente amet, architecto omnis vero illo quasi quod minus ad dicta facilis. Quo, natus!</p>
-        <p>Totam rerum voluptate, suscipit autem, et id provident sunt minima nisi sequi sit, corporis non. Est enim, vel expedita nesciunt quam cum voluptatibus eaque voluptatem ipsam quis incidunt ratione unde explicabo reprehenderit! Voluptates deserunt voluptatem necessitatibus dolorum ducimus repellat distinctio quo velit illo, neque aliquid ea praesentium beatae dolore accusantium error hic consequuntur quaerat, similique excepturi porro molestiae ipsum? Accusamus.</p>
-        <p>Obcaecati natus deleniti delectus molestiae tempore eveniet fugit quis, ipsam iusto a, commodi dolore ea repellendus dolores ab magnam necessitatibus beatae aspernatur minus neque numquam labore ipsa consequuntur velit. Architecto earum rem aliquam blanditiis nemo assumenda delectus, optio natus possimus? Reprehenderit, omnis ex et hic aspernatur maxime dolores magni accusantium iusto pariatur vitae neque ipsa harum! Iste officia aperiam mollitia.</p>
-        <p>Ipsam aspernatur repellendus nostrum, commodi quasi non adipisci, veritatis nihil natus dicta soluta corporis. Deleniti officiis, laudantium commodi quisquam dolorem ducimus quibusdam perferendis quae! Quia maxime eos enim error eius ab quo non ipsam eligendi, cum, nesciunt minus itaque, ut voluptate culpa consequatur id beatae sit alias repellat. Maiores quas nesciunt quod. Id incidunt molestiae ab expedita, rerum modi optio.</p>
-        <p>Non assumenda ea est sint molestiae ducimus deleniti ut quis commodi. Dolor, perspiciatis blanditiis! Odio deserunt consequuntur possimus similique dolor reprehenderit cum debitis. Possimus in nemo sint aliquid quibusdam et quos reiciendis fuga culpa rem veniam aut illum omnis itaque quo sequi repudiandae sapiente voluptatem, placeat labore unde autem. Qui perspiciatis quibusdam consequatur voluptates. Amet officiis magnam molestias. Ut, magni.</p>
-
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus porro rem illo totam fuga magnam tempora omnis doloremque quisquam asperiores cumque, nam quas, consectetur architecto vitae, natus dolore dolorem laboriosam maiores nemo eos. Fugit delectus explicabo maxime, dolores beatae, voluptates temporibus quo ab consequuntur ratione officia iusto, rerum harum! Perferendis consequatur adipisci vero, consequuntur itaque explicabo quas at! Provident, et?</p>
-        <p>Voluptas voluptatibus enim repudiandae illum minima possimus iusto veniam consectetur magnam, rerum molestias placeat culpa sed? Earum aspernatur magnam, optio officia provident vero ipsa aliquid. Nam sint eius ut id nihil modi quae culpa error velit! Qui obcaecati fugiat ex nesciunt autem architecto voluptas earum distinctio repellendus voluptates optio reprehenderit totam asperiores ea facere maiores repellat natus, sint in libero?</p>
-        <p>Totam aut minus unde voluptas optio enim placeat. Deserunt labore enim nam, soluta ipsa magnam harum? Itaque placeat commodi quo ea inventore labore error doloremque nostrum animi maiores recusandae modi voluptas iste, earum cum illo fugit eaque nisi dicta neque! Sapiente eius error expedita, eos recusandae ullam, ipsa dignissimos ad, explicabo impedit est nesciunt excepturi distinctio quisquam. In, deleniti rem!</p>
-        <p>Reiciendis, omnis corrupti dolorem odio iure voluptatem modi non eos fuga accusamus nesciunt quis explicabo similique. Optio esse velit earum impedit! Odit nam aliquam, nihil adipisci exercitationem quia nesciunt omnis suscipit ratione beatae a perferendis obcaecati iste ipsa molestiae quisquam, sapiente incidunt corrupti, delectus amet voluptatibus pariatur alias. Delectus, ipsam tempore? Et explicabo nemo aspernatur sit nostrum natus soluta assumenda.</p>
-        <p>Vero eius ipsum facere recusandae quaerat alias error, temporibus sit impedit quos cupiditate rem. In necessitatibus hic quasi deleniti obcaecati, ipsum odit facilis veritatis nihil esse ut quis porro cumque quibusdam nam explicabo labore recusandae sapiente. Ex, expedita! Esse aliquam nihil repudiandae, eveniet nisi quae? Ratione mollitia nobis doloribus nisi vitae illo iste. Voluptatum sint ex molestias corrupti eius vel?</p>
-        <p>Commodi, dolorem laboriosam maiores odio rem ratione, facilis, libero sit neque laudantium recusandae. At excepturi, praesentium dolor laboriosam, exercitationem, quibusdam illum porro in est accusamus ullam molestias voluptates. Asperiores laboriosam, accusantium minima nostrum est repellat perspiciatis culpa fuga cum, dicta eum assumenda incidunt? Tenetur eius rerum quos unde, excepturi aliquam aperiam? Possimus officia facere, quae iusto cum ducimus expedita cumque?</p>
-        <p>A maxime accusamus veniam, fugit, sed laboriosam ratione quas autem quibusdam totam modi voluptatum non in quaerat amet corrupti nesciunt iste earum dolore ipsa qui repellat ea. Illum quis, sequi aliquam nisi eius, exercitationem non vitae qui odio ducimus, facilis consectetur excepturi itaque dolore! Molestias nobis, doloribus dolorum, dolorem inventore ut mollitia minus repellendus magnam eligendi vero velit ducimus sint!</p>
-        <p>Debitis expedita sed quos libero commodi ducimus quam omnis! Et, adipisci ipsum doloremque nobis delectus quidem distinctio ullam animi doloribus accusamus inventore vero maxime itaque optio cum velit repudiandae tempora necessitatibus quo quos. Non est quas nesciunt harum, animi similique voluptates quaerat eum quam facilis perspiciatis placeat maxime sapiente magni quae molestiae et, ullam tempore vero odio odit? Beatae, deleniti!</p>
-        <p>Doloremque eveniet quos labore voluptate? Nam consectetur et quibusdam. Ipsum fuga ipsa ratione a sapiente eius provident officia, itaque deserunt culpa inventore? Deleniti commodi animi blanditiis accusantium necessitatibus velit quae id, cumque non quam, eligendi nisi distinctio iure dignissimos quia nostrum? Quibusdam sunt nisi nihil pariatur excepturi expedita quas animi minus fugiat porro facilis quod maxime eveniet, beatae corrupti consequatur.</p>
-        <p>Quod possimus facilis unde? Rerum voluptatem ratione modi, a ipsam tempora maiores possimus tempore assumenda molestiae quibusdam iusto fugiat asperiores aliquid? Nesciunt ipsum deserunt animi esse enim repellendus alias beatae blanditiis dicta facilis necessitatibus natus molestiae aspernatur magni quod accusantium quos, harum libero ipsa, voluptatem eius architecto reiciendis. Inventore veniam recusandae, magni temporibus sequi itaque autem molestias laborum! Ipsa, dolorem?</p>
-        <p>END</p>
+    <div id="root-layout">
+        <div id="summary">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id placeat laudantium itaque saepe, dolorem nisi unde consequatur accusantium ratione amet, delectus officia odio aspernatur recusandae eum! Ex adipisci fugiat dolor blanditiis inventore rem nam nisi accusantium quos earum. Et similique nihil assumenda neque? Maxime repellendus possimus sapiente amet, architecto omnis vero illo quasi quod minus ad dicta facilis. Quo, natus!</p>
+            <p>Totam rerum voluptate, suscipit autem, et id provident sunt minima nisi sequi sit, corporis non. Est enim, vel expedita nesciunt quam cum voluptatibus eaque voluptatem ipsam quis incidunt ratione unde explicabo reprehenderit! Voluptates deserunt voluptatem necessitatibus dolorum ducimus repellat distinctio quo velit illo, neque aliquid ea praesentium beatae dolore accusantium error hic consequuntur quaerat, similique excepturi porro molestiae ipsum? Accusamus.</p>
+            <p>Obcaecati natus deleniti delectus molestiae tempore eveniet fugit quis, ipsam iusto a, commodi dolore ea repellendus dolores ab magnam necessitatibus beatae aspernatur minus neque numquam labore ipsa consequuntur velit. Architecto earum rem aliquam blanditiis nemo assumenda delectus, optio natus possimus? Reprehenderit, omnis ex et hic aspernatur maxime dolores magni accusantium iusto pariatur vitae neque ipsa harum! Iste officia aperiam mollitia.</p>
+            <p>Ipsam aspernatur repellendus nostrum, commodi quasi non adipisci, veritatis nihil natus dicta soluta corporis. Deleniti officiis, laudantium commodi quisquam dolorem ducimus quibusdam perferendis quae! Quia maxime eos enim error eius ab quo non ipsam eligendi, cum, nesciunt minus itaque, ut voluptate culpa consequatur id beatae sit alias repellat. Maiores quas nesciunt quod. Id incidunt molestiae ab expedita, rerum modi optio.</p>
+            <p>Non assumenda ea est sint molestiae ducimus deleniti ut quis commodi. Dolor, perspiciatis blanditiis! Odio deserunt consequuntur possimus similique dolor reprehenderit cum debitis. Possimus in nemo sint aliquid quibusdam et quos reiciendis fuga culpa rem veniam aut illum omnis itaque quo sequi repudiandae sapiente voluptatem, placeat labore unde autem. Qui perspiciatis quibusdam consequatur voluptates. Amet officiis magnam molestias. Ut, magni.</p>
+        </div>
+    
+        <div id="posts">
+            <h2>Posts</h2>
+            <ol>
+                @foreach (($posts) as $post)
+                    <li>
+                        <a href="#">
+                            <h3>{{$post->title}}</h3>
+                            <p>{{substr($post->body, 0, 100)}}...</p>
+                            <p>Click to read more</p>
+                        </a>
+                    </li>
+                @endforeach
+            </ol>
+        </div>
     </div>
-
-    <ol id="posts">
-        <li>
-            <a href="#">
-                <h3>Post Title</h3>
-                <p>First few words.</p>
-            </a>
-        </li>
-    </ol>
 @endsection
 
 @section('resources')
