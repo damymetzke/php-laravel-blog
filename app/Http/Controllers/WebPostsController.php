@@ -10,7 +10,7 @@ class WebPostsController extends PostsController
     {
         return view(
             'root',
-            ['posts' => $this->list()['posts']]
+            ['posts' => $this->list()['posts']->take(5)]
         );
     }
 }

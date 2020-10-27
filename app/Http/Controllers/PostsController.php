@@ -10,7 +10,7 @@ class PostsController extends Controller
 {
     public function list()
     {
-        $posts = Post::get();
+        $posts = Post::latest()->get();
         return ['posts' => $posts];
     }
 
