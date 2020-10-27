@@ -12,11 +12,11 @@
         </div>
     
         <div id="posts">
-            <h2>Posts</h2>
+            <h2>Latest Posts</h2>
             <ol>
                 @foreach (($posts) as $post)
                     <li>
-                        <a href="#">
+                        <a href="/post/{{$post->slug}}">
                             <h3>{{$post->title}}</h3>
                             <p>{{substr($post->body, 0, 100)}}...</p>
                             <p>Click to read more</p>
