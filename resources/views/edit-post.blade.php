@@ -15,8 +15,10 @@
     <hr>
 
     <div id="actions">
-        <button>Update Post</button>
-        <button>Delete Post</button>
+        <button id="update-post">Update Post</button>
+        <button id="delete-post">Delete Post</button>
     </div>
+
+    <input type="hidden" id="post-id" value="{{$id}}">
 
 @endsection

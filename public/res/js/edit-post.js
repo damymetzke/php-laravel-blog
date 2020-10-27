@@ -95,7 +95,21 @@
 
 "use strict";
 
-console.log("hello world");
+var UPDATE_BUTTON = document.getElementById('update-post');
+var DELETE_BUTTON = document.getElementById('delete-post');
+var POST_ID = document.getElementById('post-id').value;
+var DELETE_URL = "/api/post/" + POST_ID;
+DELETE_BUTTON.addEventListener("click", function () {
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState == 4 && request.status == 200) {
+            var data = request.responseText;
+            console.log(data);
+        }
+    };
+    request.open("DELETE", DELETE_URL, true);
+    request.send();
+});
 
 
 /***/ }),
