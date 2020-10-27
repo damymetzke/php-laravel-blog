@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WebPostsController::class, 'listRoot']);
+Route::get('/post/{slugOrId}', [WebPostsController::class, 'showWeb']);
