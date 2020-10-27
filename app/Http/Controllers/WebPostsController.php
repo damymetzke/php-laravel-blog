@@ -16,12 +16,7 @@ class WebPostsController extends PostsController
 
     public function showWeb($slugOrId)
     {
-        $postData = [];
-        if (is_numeric($slugOrId)) {
-            $postData = $this->show($slugOrId);
-        } else {
-            $postData = $this->showSlug($slugOrId);
-        }
+        $postData = $this->getPostFromSlugOrId($slugOrId);
 
         return view(
             'post',
@@ -30,5 +25,26 @@ class WebPostsController extends PostsController
                 'body' => $postData->body
             ]
         );
+    }
+
+    public function edit($slugOrId)
+    {
+        $postData = $this->getPostFromSlugOrId($slugOrId);
+
+        return view(
+            'post',
+            [
+                'title' => $postData->title,
+                'body' => $postData->body
+            ]
+        );
+    }
+
+    private function getPostFromSlugOrId($slugOrId)
+    {
+        if (is_numeric($slugOrId)) {
+            return $this->show($slugOrId);
+        }
+        return $this->showSlug($slugOrId);
     }
 }
