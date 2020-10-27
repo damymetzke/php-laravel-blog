@@ -14,7 +14,18 @@ const mix = require('laravel-mix');
 // .postCss('resources/css/app.css', 'public/css', [
 //     //
 // ]);
-mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/js/edit-post.ts', 'public/res/js')
     .sass('resources/sass/root.scss', 'public/res/css')
     .sass('resources/sass/post.scss', 'public/res/css')
-    .sass('resources/sass/edit-post.scss', 'public/res/css');
+    .sass('resources/sass/edit-post.scss', 'public/res/css')
+    .webpackConfig({
+        module: {
+            rules: [
+                {
+                    test: /\.ts$/,
+                    loader: "ts-loader",
+                    exclude: /node_modules/
+                }
+            ]
+        }
+    });
