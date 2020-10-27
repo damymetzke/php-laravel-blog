@@ -8,7 +8,7 @@ use App\Models\Post;
 
 class PostsController extends Controller
 {
-    public function list()
+    public function index()
     {
         $posts = Post::latest()->get();
         return ['posts' => $posts];
@@ -26,7 +26,7 @@ class PostsController extends Controller
         return $post;
     }
 
-    public function create(Request $request)
+    public function store(Request $request)
     {
         $postResult = Post::createPost(
             $request->validate([
@@ -47,7 +47,7 @@ class PostsController extends Controller
         return $postResult;
     }
 
-    public function delete($id)
+    public function destroy($id)
     {
         $postResult = Post::where('id', $id);
 

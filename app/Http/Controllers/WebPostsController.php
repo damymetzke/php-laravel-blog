@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 
 class WebPostsController extends PostsController
 {
-    public function listRoot()
+    public function indexRoot()
     {
         return view(
             'root',
-            ['posts' => $this->list()['posts']->take(5)]
+            ['posts' => $this->index()['posts']->take(5)]
         );
     }
 

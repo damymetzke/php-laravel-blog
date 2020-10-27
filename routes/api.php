@@ -17,12 +17,12 @@ use Illuminate\Support\Facades\DB;
 |
 */
 
-Route::get('/posts', [PostsController::class, 'list']);
+Route::get('/posts', [PostsController::class, 'index']);
 Route::get('/post/{id}', [PostsController::class, 'show']);
 Route::get('/slug/post/{slug}', [PostsController::class, 'showSlug']);
 
-Route::post('/post', [PostsController::class, 'create']);
+Route::post('/post', [PostsController::class, 'store']);
 
 Route::patch('/post/{id}', [PostsController::class, 'update']);
 
-Route::delete('/post/{id}', [PostsController::class, 'delete']);
+Route::delete('/post/{id}', [PostsController::class, 'destroy']);
