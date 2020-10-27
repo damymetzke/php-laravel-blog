@@ -8,7 +8,7 @@
 @section('content')
     <h1>Admin: Edit Post</h1>
     <p>
-        Title: <input type="text" name="title" id="input-title" value="{{$title}}"> 
+        Title: <input type="text" id="post-title" value="{{$title}}"> 
     </p>
     <hr>
     <textarea id="post-body">{{$body}}</textarea>

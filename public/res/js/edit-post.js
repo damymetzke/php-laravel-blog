@@ -97,8 +97,10 @@
 
 var UPDATE_BUTTON = document.getElementById('update-post');
 var DELETE_BUTTON = document.getElementById('delete-post');
+var TITLE_ELEMENT = document.getElementById('post-title');
+var BODY_ELEMENT = document.getElementById('post-body');
 var POST_ID = document.getElementById('post-id').value;
-var DELETE_URL = "/api/post/" + POST_ID;
+var POST_URL = "/api/post/" + POST_ID;
 DELETE_BUTTON.addEventListener("click", function () {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -107,8 +109,23 @@ DELETE_BUTTON.addEventListener("click", function () {
             console.log(data);
         }
     };
-    request.open("DELETE", DELETE_URL, true);
+    request.open("DELETE", POST_URL, true);
     request.send();
+});
+UPDATE_BUTTON.addEventListener("click", function () {
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState == 4 && request.status == 200) {
+            var data = request.responseText;
+            console.log(data);
+        }
+    };
+    request.open("PATCH", POST_URL, true);
+    request.setRequestHeader('Content-Type', 'application/json');
+    request.send(JSON.stringify({
+        title: TITLE_ELEMENT.value,
+        body: BODY_ELEMENT.value
+    }));
 });
 
 
