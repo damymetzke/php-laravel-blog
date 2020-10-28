@@ -28,9 +28,9 @@ class WebPostsController extends PostsController
         );
     }
 
-    public function edit($slugOrId)
+    public function edit($id)
     {
-        $postData = $this->getPostFromSlugOrId($slugOrId);
+        $postData = $this->show($id);
 
         return view(
             'edit-post',
