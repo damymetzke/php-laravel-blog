@@ -28,6 +28,11 @@ class WebPostsController extends PostsController
         );
     }
 
+    public function create()
+    {
+        return view('create-post');
+    }
+
     public function edit($id)
     {
         $postData = $this->show($id);

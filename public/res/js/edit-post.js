@@ -131,6 +131,17 @@ UPDATE_BUTTON.addEventListener("click", function () {
 
 /***/ }),
 
+/***/ "./resources/sass/create-post.scss":
+/*!*****************************************!*\
+  !*** ./resources/sass/create-post.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/edit-post.scss":
 /*!***************************************!*\
   !*** ./resources/sass/edit-post.scss ***!
@@ -165,16 +176,17 @@ UPDATE_BUTTON.addEventListener("click", function () {
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************************************************************************!*\
-  !*** multi ./resources/js/edit-post.ts ./resources/sass/root.scss ./resources/sass/post.scss ./resources/sass/edit-post.scss ***!
-  \*******************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/edit-post.ts ./resources/sass/root.scss ./resources/sass/post.scss ./resources/sass/edit-post.scss ./resources/sass/create-post.scss ***!
+  \*****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /mnt/d/GitRepos/php-laravel-blog/resources/js/edit-post.ts */"./resources/js/edit-post.ts");
 __webpack_require__(/*! /mnt/d/GitRepos/php-laravel-blog/resources/sass/root.scss */"./resources/sass/root.scss");
 __webpack_require__(/*! /mnt/d/GitRepos/php-laravel-blog/resources/sass/post.scss */"./resources/sass/post.scss");
-module.exports = __webpack_require__(/*! /mnt/d/GitRepos/php-laravel-blog/resources/sass/edit-post.scss */"./resources/sass/edit-post.scss");
+__webpack_require__(/*! /mnt/d/GitRepos/php-laravel-blog/resources/sass/edit-post.scss */"./resources/sass/edit-post.scss");
+module.exports = __webpack_require__(/*! /mnt/d/GitRepos/php-laravel-blog/resources/sass/create-post.scss */"./resources/sass/create-post.scss");
 
 
 /***/ })
