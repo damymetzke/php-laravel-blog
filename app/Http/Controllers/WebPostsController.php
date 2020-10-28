@@ -22,7 +22,8 @@ class WebPostsController extends PostsController
             'post',
             [
                 'title' => $postData->title,
-                'body' => $postData->body
+                'body' => $postData->body,
+                'id' => $postData->id
             ]
         );
     }
