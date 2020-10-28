@@ -13,6 +13,13 @@ class WebPostsController extends PostsController
             ['posts' => $this->index()['posts']->take(5)]
         );
     }
+    public function indexAdmin()
+    {
+        return view(
+            'admin',
+            ['posts' => $this->index()['posts']]
+        );
+    }
 
     public function showWeb($slugOrId)
     {

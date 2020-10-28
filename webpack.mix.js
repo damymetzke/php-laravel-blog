@@ -19,6 +19,7 @@ mix
     .js('resources/js/create-post.ts', 'public/res/js')
 
     .sass('resources/sass/root.scss', 'public/res/css')
+    .sass('resources/sass/admin.scss', 'public/res/css')
     .sass('resources/sass/post.scss', 'public/res/css')
     .sass('resources/sass/edit-post.scss', 'public/res/css')
     .sass('resources/sass/create-post.scss', 'public/res/css')
