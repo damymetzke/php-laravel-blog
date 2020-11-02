@@ -21,7 +21,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "sass": "^1.27.0",
+        "sass": "^1.28.0",
         "sass-loader": "^10.0.4"
     }
 }
