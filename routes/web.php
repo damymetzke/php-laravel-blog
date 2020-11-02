@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WebPostsController::class, 'indexRoot']);
+Route::get('/posts', [WebPostsController::class, 'indexPosts']);
 Route::get('/post/{slugOrId}', [WebPostsController::class, 'showWeb']);
 Route::get('/admin', [WebPostsController::class, 'indexAdmin']);
 Route::get('/admin/post/{id}/edit', [WebPostsController::class, 'edit']);
