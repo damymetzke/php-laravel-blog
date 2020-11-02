@@ -36,7 +36,7 @@ class PostsController extends Controller
             ])
         );
 
-        return $postResult;
+        return ['post' => $postResult];
     }
 
     public function update(Request $request, $id)

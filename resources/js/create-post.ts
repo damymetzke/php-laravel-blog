@@ -14,8 +14,11 @@ CREATE_BUTTON.addEventListener('click', ()=>{
 
     request.onreadystatechange = (): void => {
         if (request.readyState == 4 && request.status == 200) {
-            var data = request.responseText;
-            console.log(data);
+            const data = JSON.parse(request.responseText);
+            if('post' in data)
+            {
+                window.location.href = `/admin/post/${data.post.id}/edit`;
+            }
         }
     };
 

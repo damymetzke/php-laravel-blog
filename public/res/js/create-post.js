@@ -103,8 +103,10 @@ CREATE_BUTTON.addEventListener('click', function () {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState == 4 && request.status == 200) {
-            var data = request.responseText;
-            console.log(data);
+            var data = JSON.parse(request.responseText);
+            if ('post' in data) {
+                window.location.href = "/admin/post/" + data.post.id + "/edit";
+            }
         }
     };
     request.open("POST", POST_URL, true);
