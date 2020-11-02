@@ -38,7 +38,7 @@ body {
 header {
   width: 100%;
   background-color: #0c2200;
-  border-bottom: #ff004c solid 5px;
+  border-bottom: #5464e2 solid 5px;
   height: 80px;
 }
 
@@ -60,7 +60,7 @@ header ul {
 
 header ul a {
   background-color: #f6fff1;
-  border-bottom: #ff004c solid 3px;
+  border-bottom: #5464e2 solid 3px;
   border-radius: 5px;
   height: 40px;
   padding: 10px 10px;
@@ -81,7 +81,7 @@ main {
 }
 
 footer {
-  border-top: #ff004c solid 5px;
+  border-top: #5464e2 solid 5px;
   background-color: #0c2200;
   color: #eaf9ff;
   position: fixed;
@@ -115,7 +115,7 @@ footer div p {
   width: 100%;
   display: block;
   padding: 10px;
-  border: #ff004c solid 2px;
+  border: #5464e2 solid 2px;
   background-color: #0c2200;
 }
 
