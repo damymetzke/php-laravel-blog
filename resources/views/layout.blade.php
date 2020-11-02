@@ -22,6 +22,7 @@
     <main>
         @yield('content')
     </main>
+    <div id="footer-padding"></div>
     <footer>
         <div>
             <p>
