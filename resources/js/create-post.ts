@@ -15,7 +15,7 @@ CREATE_BUTTON.addEventListener('click', ()=>{
     request.onreadystatechange = (): void => {
         if (request.readyState == 4 && request.status == 200) {
             const data = JSON.parse(request.responseText);
-            if('post' in data)
+            if('success' in data && data.success === true)
             {
                 window.location.href = `/admin/post/${data.post.id}/edit`;
             }

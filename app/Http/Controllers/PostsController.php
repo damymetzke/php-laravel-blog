@@ -36,7 +36,10 @@ class PostsController extends Controller
             ])
         );
 
-        return ['post' => $postResult];
+        return [
+            'success' => true,
+            'post' => $postResult
+        ];
     }
 
     public function update(Request $request, $id)
@@ -44,7 +47,10 @@ class PostsController extends Controller
         $postResult = Post::where('id', $id)->firstOrFail();
         $postResult->updatePost($request);
 
-        return $postResult;
+        return [
+            'success' => true,
+            'post' => $postResult
+        ];
     }
 
     public function destroy($id)
@@ -52,5 +58,6 @@ class PostsController extends Controller
         $postResult = Post::where('id', $id);
 
         $postResult->delete();
+        return ['success' => true];
     }
 }
