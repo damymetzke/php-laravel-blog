@@ -105,8 +105,10 @@ DELETE_BUTTON.addEventListener("click", function () {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState == 4 && request.status == 200) {
-            var data = request.responseText;
-            console.log(data);
+            var data = JSON.parse(request.responseText);
+            if ('success' in data && data.success === true) {
+                window.location.href = "/admin";
+            }
         }
     };
     request.open("DELETE", POST_URL, true);

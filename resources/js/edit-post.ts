@@ -14,8 +14,11 @@ DELETE_BUTTON.addEventListener("click", ()=>{
 
     request.onreadystatechange = (): void => {
         if (request.readyState == 4 && request.status == 200) {
-            var data = request.responseText;
-            console.log(data);
+            const data = JSON.parse(request.responseText);
+            if('success' in data && data.success === true)
+            {
+                window.location.href = "/admin";
+            }
         }
     };
 
