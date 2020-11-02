@@ -103,3 +103,33 @@ footer div p {
   text-align: center;
 }
 
+#posts {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+#posts a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border: #ff004c solid 2px;
+  background-color: #0c2200;
+}
+
+#posts a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#posts a h3 {
+  text-align: center;
+  color: #e96668;
+}
+
+#posts a p {
+  color: #eaf9ff;
+}
+
