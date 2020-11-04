@@ -20,3 +20,7 @@ Route::get('/post/{slugOrId}', [WebPostsController::class, 'showWeb']);
 Route::get('/admin', [WebPostsController::class, 'indexAdmin']);
 Route::get('/admin/post/{id}/edit', [WebPostsController::class, 'edit']);
 Route::get('/admin/create', [WebPostsController::class, 'create']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
