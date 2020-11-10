@@ -1,4 +1,8 @@
-@extends('layouts.app')
+@extends('layout')
+
+@section('resources')
+    <link rel="stylesheet" href="/res/css/auth.confirm.css">
+@endsection
 
 @section('content')
 <div class="container">
