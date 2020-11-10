@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('resources')
+    <link rel="stylesheet" href="/res/css/auth.verify.css">
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
