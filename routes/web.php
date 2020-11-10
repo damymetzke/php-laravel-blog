@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\WebPostsController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +23,3 @@ Route::get('/admin/post/{id}/edit', [WebPostsController::class, 'edit']);
 Route::get('/admin/create', [WebPostsController::class, 'create']);
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

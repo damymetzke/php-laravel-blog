@@ -1,10 +1,4 @@
 {
-    "/res/js/create-post.js": "/res/js/create-post.js",
-    "/res/js/edit-post.js": "/res/js/edit-post.js",
-    "/res/css/root.css": "/res/css/root.css",
-    "/res/css/posts.css": "/res/css/posts.css",
-    "/res/css/admin.css": "/res/css/admin.css",
-    "/res/css/post.css": "/res/css/post.css",
-    "/res/css/edit-post.css": "/res/css/edit-post.css",
-    "/res/css/create-post.css": "/res/css/create-post.css"
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css"
 }
