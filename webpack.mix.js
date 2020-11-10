@@ -15,6 +15,7 @@ const mix = require('laravel-mix');
 //     //
 // ]);
 mix
+    .copyDirectory('resources/static', 'public')
     .js('resources/js/edit-post.ts', 'public/res/js')
     .js('resources/js/create-post.ts', 'public/res/js')
 
