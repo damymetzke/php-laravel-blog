@@ -18,6 +18,7 @@ mix
     .copyDirectory('resources/static', 'public')
     .js('resources/js/edit-post.ts', 'public/res/js')
     .js('resources/js/create-post.ts', 'public/res/js')
+    .js('resources/js/layout.ts', 'public/res/js')
 
     .sass('resources/sass/admin.admin.scss', 'public/res/css')
     .sass('resources/sass/admin.create-post.scss', 'public/res/css')

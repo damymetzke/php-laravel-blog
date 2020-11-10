@@ -33,13 +33,19 @@ header
         align-items: center;
         gap: 40px;
 
-        a
+        a, div
         {
                 background-color: $color-background;
                 border-bottom: $color-highlight solid 3px;
                 border-radius: 5px;
                 height: 40px;
                 padding: 10px 10px;
+
+                text-decoration: none;
+                color: $color-header;
+                font-size: 1.2rem;
+                font-weight: bold;
+                font-family: sans-serif;
 
                 &:link
                 {

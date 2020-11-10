@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> @yield('title') </title>
 
+    <script src="res/js/layout.js" defer></script>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     @yield('resources')
 </head>
 <body>
@@ -15,6 +18,11 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/posts">Posts</a></li>
                 <li><a href="/admin">Admin</a></li>
+                @guest
+                    <li><a href="/login">Login</a></li>   
+                @else    
+                    <li><div id="layout-logout">Logout</div></li>   
+                @endauth
                 @yield('navigation')
             </ul>
         </nav>
