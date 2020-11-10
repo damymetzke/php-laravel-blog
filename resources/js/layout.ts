@@ -18,8 +18,7 @@ if(LAYOUT_LOGOUT !== null)
 
         request.onreadystatechange = (): void => {
             if (request.readyState == 4 && request.status == 200) {
-                const data = request.responseText;
-                console.log(data);
+                LAYOUT_LOGOUT.outerHTML = '<a href="/login">Login</a>'
             }
         };
 
