@@ -29,5 +29,5 @@
 @endsection
 
 @section('resources')
-    <link rel="stylesheet" href="res/css/root.css">
+    <link rel="stylesheet" href="res/css/index.css">
 @endsection

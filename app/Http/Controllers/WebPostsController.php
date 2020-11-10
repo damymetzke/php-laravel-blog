@@ -9,7 +9,7 @@ class WebPostsController extends PostsController
     public function indexRoot()
     {
         return view(
-            'root',
+            'index',
             ['posts' => $this->index()['posts']->take(5)]
         );
     }
@@ -23,7 +23,7 @@ class WebPostsController extends PostsController
     public function indexAdmin()
     {
         return view(
-            'admin',
+            'admin.admin',
             ['posts' => $this->index()['posts']]
         );
     }
@@ -44,7 +44,7 @@ class WebPostsController extends PostsController
 
     public function create()
     {
-        return view('create-post');
+        return view('admin.create-post');
     }
 
     public function edit($id)
@@ -52,7 +52,7 @@ class WebPostsController extends PostsController
         $postData = $this->show($id);
 
         return view(
-            'edit-post',
+            'admin.edit-post',
             [
                 'title' => $postData->title,
                 'body' => $postData->body,

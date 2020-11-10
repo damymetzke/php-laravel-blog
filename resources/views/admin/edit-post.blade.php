@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('resources')
-    <link rel="stylesheet" href="/res/css/edit-post.css">
+    <link rel="stylesheet" href="/res/css/admin.edit-post.css">
     <script src="/res/js/edit-post.js" defer></script>
 @endsection
 

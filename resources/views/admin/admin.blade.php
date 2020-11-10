@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('resources')
-    <link rel="stylesheet" href="/res/css/admin.css">
+    <link rel="stylesheet" href="/res/css/admin.admin.css">
 @endsection
 
 @section('navigation')
