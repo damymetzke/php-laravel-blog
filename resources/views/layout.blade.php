@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> @yield('title') </title>
 
-    <script src="res/js/layout.js" defer></script>
+    <script src="/res/js/layout.js" defer></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     @yield('resources')

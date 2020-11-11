@@ -21,8 +21,8 @@ Route::get('/posts', [PostsController::class, 'index']);
 Route::get('/post/{id}', [PostsController::class, 'show']);
 Route::get('/slug/post/{slug}', [PostsController::class, 'showSlug']);
 
-Route::post('/post', [PostsController::class, 'store']);
+Route::post('/post', [PostsController::class, 'store'])->middleware('auth:api');
 
-Route::patch('/post/{id}', [PostsController::class, 'update']);
+Route::patch('/post/{id}', [PostsController::class, 'update'])->middleware('auth:api');
 
-Route::delete('/post/{id}', [PostsController::class, 'destroy']);
+Route::delete('/post/{id}', [PostsController::class, 'destroy'])->middleware('auth:api');

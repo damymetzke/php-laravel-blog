@@ -7,7 +7,7 @@ const BODY_ELEMENT = <HTMLTextAreaElement>document.getElementById('post-body');
 
 const POST_ID = (<HTMLInputElement>document.getElementById('post-id')).value;
 
-const POST_URL = `/api/post/${POST_ID}`;
+const POST_URL = `/admin/post/${POST_ID}`;
 
 DELETE_BUTTON.addEventListener("click", ()=>{
     const request = new XMLHttpRequest();

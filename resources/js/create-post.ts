@@ -7,7 +7,7 @@ const CREATE_BUTTON = <HTMLButtonElement>document.getElementById('create-post');
 const TITLE_ELEMENT = <HTMLInputElement>document.getElementById('input-title');
 const BODY_ELEMENT = <HTMLInputElement>document.getElementById('input-body');
 
-const POST_URL = '/api/post';
+const POST_URL = '/admin/post';
 
 CREATE_BUTTON.addEventListener('click', ()=>{
     const request = new XMLHttpRequest();

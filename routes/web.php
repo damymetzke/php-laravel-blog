@@ -18,8 +18,12 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', [WebPostsController::class, 'indexRoot']);
 Route::get('/posts', [WebPostsController::class, 'indexPosts']);
 Route::get('/post/{slugOrId}', [WebPostsController::class, 'showWeb']);
-Route::get('/admin', [WebPostsController::class, 'indexAdmin']);
-Route::get('/admin/post/{id}/edit', [WebPostsController::class, 'edit']);
-Route::get('/admin/create', [WebPostsController::class, 'create']);
+Route::get('/admin', [WebPostsController::class, 'indexAdmin'])->middleware('auth:web');
+Route::get('/admin/post/{id}/edit', [WebPostsController::class, 'edit'])->middleware('auth:web');
+Route::get('/admin/create', [WebPostsController::class, 'create'])->middleware('auth:web');
+
+Route::patch('/admin/post/{id}', [WebPostsController::class, 'updateWeb'])->middleware('auth:web');
+Route::delete('/admin/post/{id}', [WebPostsController::class, 'destroyWeb'])->middleware('auth:web');
+Route::post('/admin/post', [WebPostsController::class, 'storeWeb'])->middleware('auth:web');
 
 Auth::routes();
