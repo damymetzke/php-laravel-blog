@@ -13,7 +13,9 @@ if(LAYOUT_LOGOUT !== null)
 
         request.onreadystatechange = (): void => {
             if (request.readyState == 4 && request.status == 200) {
-                LAYOUT_LOGOUT.outerHTML = '<a href="/login">Login</a>'
+                Array.from(document.getElementsByTagName('body')).forEach(element => {
+                    element.setAttribute('active-role', 'guest');
+                });
             }
         };
 
