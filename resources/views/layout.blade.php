@@ -19,8 +19,7 @@
                 <li><a href="/posts">Posts</a></li>
 
                 <li class="role-require role-admin"><a href="/admin">Admin</a></li>
-
-                <li class="role-require role-guest"><a href="/admin/login">Login</a></li>   
+ 
                 <li class="role-not-guest"><div id="layout-logout">Logout</div></li>   
 
                 @yield('navigation')
