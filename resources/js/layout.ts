@@ -4,7 +4,7 @@ import getMetaData from './shared/get-meta-data.ts';
 
 const LAYOUT_LOGOUT = document.getElementById('layout-logout');
 
-const LAYOUT_URL = '/logout';
+const LAYOUT_URL = '/admin/logout';
 
 if(LAYOUT_LOGOUT !== null)
 {
