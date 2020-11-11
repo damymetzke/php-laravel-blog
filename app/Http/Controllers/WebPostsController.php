@@ -63,15 +63,15 @@ class WebPostsController extends PostsController
 
     public function updateWeb(Request $request, $id)
     {
-        $this->update($request, $id);
+        return $this->update($request, $id);
     }
     public function destroyWeb($id)
     {
-        $this->destroy($id);
+        return $this->destroy($id);
     }
     public function storeWeb(Request $request)
     {
-        $this->store($request);
+        return $this->store($request);
     }
 
     private function getPostFromSlugOrId($slugOrId)

@@ -1,5 +1,8 @@
 // I have to this because for some fucking reason typescript assumes I'm going to load all the source files at once.
 // The reason I use different files is BECAUSE I don't want to mix them stupid compiler.
+
+import getMetaData from "./shared/get-meta-data.ts";
+
 // At LEAST just make it an option, I do not want to have to add this line just to circumvent the compiler, it's ugly.
 export {}
 const CREATE_BUTTON = <HTMLButtonElement>document.getElementById('create-post');
@@ -26,6 +29,9 @@ CREATE_BUTTON.addEventListener('click', ()=>{
     request.open("POST", POST_URL, true);
 
     request.setRequestHeader('Content-Type', 'application/json');
+    request.setRequestHeader('X-CSRF-TOKEN', getMetaData('csrf-token'));
+
+
 
     request.send(JSON.stringify({
         title: TITLE_ELEMENT.value,

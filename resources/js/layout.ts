@@ -1,18 +1,13 @@
 export {};
 
+import getMetaData from './shared/get-meta-data.ts';
+
 const LAYOUT_LOGOUT = document.getElementById('layout-logout');
 
 const LAYOUT_URL = '/logout';
 
 if(LAYOUT_LOGOUT !== null)
 {
-    const META_TAGS = document.getElementsByTagName('meta');
-
-    let metaData: {[name: string]: string} = {}
-    Array.from(META_TAGS).forEach(tag=>{
-        metaData[tag.name] = tag.content;
-    });
-
     LAYOUT_LOGOUT.addEventListener('click', ()=>{
         const request = new XMLHttpRequest();
 
@@ -26,7 +21,7 @@ if(LAYOUT_LOGOUT !== null)
         request.open("POST", LAYOUT_URL, true);
 
         request.setRequestHeader('Content-Type', 'application/json');
-        request.setRequestHeader('X-CSRF-TOKEN', metaData['csrf-token']);
+        request.setRequestHeader('X-CSRF-TOKEN', getMetaData('csrf-token'));
 
         request.send();
     })
