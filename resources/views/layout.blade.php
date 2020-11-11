@@ -11,22 +11,17 @@
 
     @yield('resources')
 </head>
-<body>
+<body active-role="{{ Auth::check() ? 'admin' : 'guest' }}">
     <header>
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/posts">Posts</a></li>
 
-                @auth
-                    <li><a href="/admin">Admin</a></li>
-                @endauth
-                
-                @guest
-                    <li><a href="/login">Login</a></li>   
-                @else    
-                    <li><div id="layout-logout">Logout</div></li>   
-                @endauth
+                <li class="role-require role-admin"><a href="/admin">Admin</a></li>
+
+                <li class="role-require role-guest"><a href="/login">Login</a></li>   
+                <li class="role-not-guest"><div id="layout-logout">Logout</div></li>   
 
                 @yield('navigation')
             </ul>
