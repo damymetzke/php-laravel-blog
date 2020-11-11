@@ -17,12 +17,17 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/posts">Posts</a></li>
-                <li><a href="/admin">Admin</a></li>
+
+                @auth
+                    <li><a href="/admin">Admin</a></li>
+                @endauth
+                
                 @guest
                     <li><a href="/login">Login</a></li>   
                 @else    
                     <li><div id="layout-logout">Logout</div></li>   
                 @endauth
+
                 @yield('navigation')
             </ul>
         </nav>

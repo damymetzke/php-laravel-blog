@@ -5,7 +5,9 @@
 @endsection
 
 @section('navigation')
-    <li><a href="/admin/post/{{$id}}/edit">Edit Post</a></li>
+    @auth
+        <li><a href="/admin/post/{{$id}}/edit">Edit Post</a></li>   
+    @endauth
 @endsection
 
 @section('content')
