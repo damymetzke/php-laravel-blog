@@ -1,16 +1,11 @@
-.role-require
+*[active-role=admin] .role-require:not(.role-admin)
 {
     display: none;
 }
 
-*[active-role=admin] .role-admin
+*[active-role=guest] .role-require:not(.role-guest)
 {
-    display: inherit;
-}
-
-*[active-role=guest] .role-guest
-{
-    display: inherit;
+    display: none;
 }
 
 *[active-role=admin] .role-not-admin
