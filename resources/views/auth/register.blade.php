@@ -11,29 +11,18 @@
     <div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" autofocus>
-        @error('name')
-            <span class="invalid-feedback" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
-        @enderror
+        <x-input-error type="name"></x-input-error>
+
     </div>
     <div>
         <label for="email">Email</label>
         <input type="email" id="email" name="email">
-        @error('email')
-            <span class="invalid-feedback" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
-        @enderror
+        <x-input-error type="email"></x-input-error>
     </div>
     <div>
         <label for="password">Password</label>
         <input type="password" id="password" name="password">
-        @error('password')
-            <span class="invalid-feedback" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
-        @enderror
+        <x-input-error type="password"></x-input-error>
     </div>
     <div>
         <label for="password-confirm">Confirm Password</label>
