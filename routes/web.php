@@ -28,5 +28,5 @@ Route::group(['prefix' => 'admin'], function () {
     Route::delete('/post/{id}', [WebPostsController::class, 'destroyWeb'])->middleware('auth:web');
     Route::post('/post', [WebPostsController::class, 'storeWeb'])->middleware('auth:web');
 
-    Auth::routes();
+    Auth::routes(['register' => false]);
 });
