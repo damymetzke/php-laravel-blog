@@ -47,6 +47,8 @@ header
                 font-weight: bold;
                 font-family: sans-serif;
 
+                cursor: pointer;
+                
                 &:link
                 {
                     text-decoration: none;
@@ -54,6 +56,7 @@ header
                     font-size: 1.2rem;
                     font-weight: bold;
                     font-family: sans-serif;
+                    cursor: pointer;
                 }
         }
     }
