@@ -40,7 +40,7 @@ class PostsController extends Controller
         );
 
         if ($validator->fails()) {
-            return response()->json([], 400);
+            return response()->json([], 403);
         }
         $postResult = Post::createPost($request->all());
 
