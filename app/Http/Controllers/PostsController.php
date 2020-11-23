@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Post;
+use Illuminate\Auth\Events\Failed;
+use Illuminate\Support\Facades\Validator;
 
 class PostsController extends Controller
 {
@@ -28,13 +30,19 @@ class PostsController extends Controller
 
     public function store(Request $request)
     {
-        $postResult = Post::createPost(
-            $request->validate([
+        $validator = Validator::make(
+            $request->all(),
+            [
                 'slug' => 'required',
                 'title' => 'required',
                 'body' => 'required'
-            ])
+            ]
         );
+
+        if ($validator->fails()) {
+            return response()->json([], 400);
+        }
+        $postResult = Post::createPost($request->all());
 
         return [
             'success' => true,
