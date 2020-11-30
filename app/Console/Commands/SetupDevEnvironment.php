@@ -42,7 +42,7 @@ class SetupDevEnvironment extends Command
      */
     public function handle()
     {
-        $globalProgress = $this->output->createProgressBar(2);
+        $globalProgress = $this->output->createProgressBar(3);
 
         $globalProgress->display();
         $this->info(' STEP: setup .env file');
@@ -77,7 +77,6 @@ class SetupDevEnvironment extends Command
             file_put_contents('.env', $this->envContent);
         }
         $globalProgress->advance();
-
         $globalProgress->display();
         $this->info(' STEP: generate application key');
 
@@ -87,6 +86,12 @@ class SetupDevEnvironment extends Command
             $this->call('key:generate');
         }
 
+
+        $globalProgress->advance();
+        $globalProgress->display();
+        $this->info(' STEP: migrate and seed database');
+
+        $this->call('migrate:fresh', ['--seed']);
 
         $globalProgress->advance();
         $this->newLine();
