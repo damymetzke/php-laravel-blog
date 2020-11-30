@@ -42,8 +42,12 @@ class SetupDevEnvironment extends Command
      */
     public function handle()
     {
+        $globalProgress = $this->output->createProgressBar(1);
+
+        $this->info('Step 1/1: setup .env file');
+
         if (file_exists('.env')) {
-            $this->warn('.env file already exists!');
+            $this->info('.env file already exists, skipping step.');
             exit;
         }
 
@@ -64,12 +68,14 @@ class SetupDevEnvironment extends Command
                 continue;
             }
 
-            $printing .= $environmentName . '=' . $value . "\n";
+            $printing .= "\t" . $environmentName . '=' . $value . "\n";
         }
 
         $this->info($printing);
 
         file_put_contents('.env', $this->envContent);
+
+        $globalProgress->advance();
 
         return 0;
     }
