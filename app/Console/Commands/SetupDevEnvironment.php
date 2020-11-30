@@ -49,11 +49,11 @@ class SetupDevEnvironment extends Command
 
         $this->envContent = file_get_contents('.env.example');
         $variables = [
-            'DB_HOST' => $this->setupEnvironmentVariable('host', 'DB_HOST'),
-            'DB_PORT' => $this->setupEnvironmentVariable('port', 'DB_PORT'),
-            'DB_DATABASE' => $this->setupEnvironmentVariable('database', 'DB_DATABASE'),
-            'DB_USERNAME' => $this->setupEnvironmentVariable('username', 'DB_USERNAME'),
-            'DB_PASSWORD' => $this->setupEnvironmentVariable('password', 'DB_PASSWORD')
+            'DB_HOST' =>        $this->setupEnvironmentVariable('host',         'DB_HOST',      '127.0.0.1'),
+            'DB_PORT' =>        $this->setupEnvironmentVariable('port',         'DB_PORT',      '3306'),
+            'DB_DATABASE' =>    $this->setupEnvironmentVariable('database',     'DB_DATABASE',  'laravel'),
+            'DB_USERNAME' =>    $this->setupEnvironmentVariable('username',     'DB_USERNAME',  'root'),
+            'DB_PASSWORD' =>    $this->setupEnvironmentVariable('password',     'DB_PASSWORD',  '')
         ];
 
         $printing =
@@ -74,12 +74,12 @@ class SetupDevEnvironment extends Command
         return 0;
     }
 
-    private function setupEnvironmentVariable($optionName, $environmentName)
+    private function setupEnvironmentVariable($optionName, $environmentName, $default = '')
     {
         $setTo = $this->option($optionName);
 
         if ($setTo === null) {
-            $setTo = $this->ask('Please enter a value for \'' . $optionName . '\'', '');
+            $setTo = $this->ask('Please enter a value for \'' . $optionName . '\'', $default);
         }
 
         if ($setTo !== '') {
