@@ -11,14 +11,17 @@ class SetupDevEnvironment extends Command
      *
      * @var string
      */
-    protected $signature = 'app:setup-dev {--H|host=} {--P|port=} {--D|database=} {--U|username=} {--W|password=}';
+    protected $signature = 'app:setup {--H|host=} {--P|port=} {--D|database=} {--U|username=} {--W|password=}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Quickly generate a .env file';
+    protected $description = 'Quickly setup a valid development environment';
+
+    protected $help = "Does the following steps:\n"
+        . "\t1. Generate environment file";
 
     private $envContent = '';
 
