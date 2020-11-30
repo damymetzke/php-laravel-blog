@@ -11,7 +11,7 @@ class SetupDevEnvironment extends Command
      *
      * @var string
      */
-    protected $signature = 'app:setup-dev {--H|host=} {--U|username=} {--P|password=}';
+    protected $signature = 'app:setup-dev {--H|host=} {--P|port=} {--D|database=} {--U|username=} {--W|password=}';
 
     /**
      * The console command description.
@@ -40,13 +40,15 @@ class SetupDevEnvironment extends Command
     public function handle()
     {
         if (file_exists('.env')) {
-            $this->info('.env file already exists!');
+            $this->warn('.env file already exists!');
             exit;
         }
 
         $this->envContent = file_get_contents('.env.example');
         $variables = [
             'DB_HOST' => $this->setupEnvironmentVariable('host', 'DB_HOST'),
+            'DB_PORT' => $this->setupEnvironmentVariable('port', 'DB_PORT'),
+            'DB_DATABASE' => $this->setupEnvironmentVariable('database', 'DB_DATABASE'),
             'DB_USERNAME' => $this->setupEnvironmentVariable('username', 'DB_USERNAME'),
             'DB_PASSWORD' => $this->setupEnvironmentVariable('password', 'DB_PASSWORD')
         ];
