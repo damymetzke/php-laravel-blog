@@ -21,7 +21,9 @@ class SetupDevEnvironment extends Command
     protected $description = 'Quickly setup a valid development environment';
 
     protected $help = "Does the following steps:\n"
-        . "\t1. Generate environment file";
+        . "\t1. Generate environment file\n"
+        . "\t2. Generate application key\n"
+        . "\t3. Migrate and seed database\n";
 
     private $envContent = '';
 
