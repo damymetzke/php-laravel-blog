@@ -7,18 +7,22 @@ use Illuminate\Console\Command;
 class CommitCommand extends Command
 {
     /**
-     * The name and signature of the console command.
-     *
      * @var string
      */
     protected $signature = 'app:commit';
 
     /**
-     * The console command description.
-     *
      * @var string
      */
     protected $description = 'Run tests and commit using git CLI.';
+
+    /**
+     * @var string
+     */
+    protected $help =
+    "Does the following:\n"
+        . "\t* Run artisan test command\n"
+        . "\t* Run `git commit -v`\n";
 
     /**
      * Create a new command instance.
