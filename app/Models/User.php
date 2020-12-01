@@ -8,17 +8,35 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    static public function createUser(string $name, string $email, string $password)
+    static public function createUser(string $name, string $email, string $password, $optional = [])
     {
-        return User::create([
-            'name' => $name,
-            'email' => $email,
-            'password' => Hash::make($password),
+        $data = array_merge(
+            [
+                'name' => $name,
+                'email' => $email,
+                'password' => Hash::make($password),
+            ],
+            $optional
+        );
+
+        return User::create($data);
+    }
+
+    static public function validator($data)
+    {
+        return Validator::make($data, [
+            'name' => ['required', 'string', 'unique:users', 'max:255'],
+            'email' => ['required', 'string', 'email', 'unique:users', 'max:255'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'phone' => ['string', 'regex:/^(\+31|0)(6[\- ]?[0-589][0-9]{7}|[0-9]{2}[\- ]?[0-9]{7}|[0-9]{3}[\- ]?[0-9]{6})$/'], //only considers dutch phone numbers, is probably broken.
+            'address' => ['string', 'max:255'],
+            'bsn' => ['string', 'unique:users', 'regex:/^[0-9]{9}$/'],
         ]);
     }
 
