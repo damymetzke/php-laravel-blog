@@ -8,9 +8,9 @@
 <form action="{{ route('login') }}" method="post">
     @csrf
     <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" autofocus>
-        <x-input-error type="email"></x-input-error>
+        <label for="name">Name</label>
+        <input id="name" name="name" autofocus>
+        <x-input-error type="name"></x-input-error>
     </div>
     <div>
         <label for="password">Password</label>
